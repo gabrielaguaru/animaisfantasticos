@@ -1,0 +1,33 @@
+.numeros-grid {
+    grid-column: 2 / 4;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.numeros-grid h3 {
+    font-size: 2.8rem;
+    font-family: 'Playfair Display SC', Georgia;
+    margin-bottom: .5rem;
+}
+
+.numeros-grid span {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: #E54;
+}
+
+@media (max-width: 700px) {
+    .numeros-grid {
+        grid-column: 1;
+    }
+
+    .numeros-grid h3 {
+        font-size: 2rem;
+    }
+
+    .numeros-grid span {
+        font-size: 1.5rem;
+    }
+}

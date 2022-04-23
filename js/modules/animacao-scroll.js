@@ -9,7 +9,9 @@ export default function initAnimationScroll() {
           const isSectionVisible = sectionTop - halfSection < 0;
           if (isSectionVisible) {
             section.classList.add("animation");
-          } 
+          } else if(section.classList.contains("animation")){
+            section.classList.remove("animation");
+          }
         });
       }
       animaScroll();
