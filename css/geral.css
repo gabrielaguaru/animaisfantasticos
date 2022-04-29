@@ -182,6 +182,21 @@ body{
     margin-right: 10px;
 }
 
+[data-semana]::after {
+    display: inline-block;
+    content: '';
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-left: .3rem;
+    background-color: #e54;
+}
+
+[data-semana].aberto::after {
+    background-color: #3F4;
+}
+
 .copy {
     grid-column: 3 / 5;
     background-color: #fb5;
